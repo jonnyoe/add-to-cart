@@ -42,7 +42,7 @@ function addItemToDo() {
 
     if (inputValue) {
         push(toDoListInDB, inputValue)
-        clearInputFieldEl()
+        clearInputFieldElTwo()
     }
 }
 
@@ -143,7 +143,7 @@ function appendItemToToDoListEl(item) {
     newEl.textContent = itemValue
 
     newEl.addEventListener("click", function () {
-        let exactLocationOfItemInDB = ref(database, `toDoList/${itemId}`)
+        let exactLocationOfItemInDB = ref(database, `toDoList/${itemID}`)
 
         remove(exactLocationOfItemInDB)
     })
