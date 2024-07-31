@@ -147,5 +147,5 @@ function appendItemToToDoListEl(item) {
 
         remove(exactLocationOfItemInDB)
     })
-
+    toDoListEl.append(newEl)
 }
